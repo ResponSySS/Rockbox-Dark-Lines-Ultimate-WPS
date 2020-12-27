@@ -1,0 +1,71 @@
+# Theme Name: Dark Lines Ultimate
+#   heavily inspired by the magnificient Dark Lines theme by Ivan Lysytsyn
+# By: Sylvain Saubier <feedback@sylsau.com>
+# Platform: SanDisk Sansa Fuze
+# Version: 0.9
+#
+%wd
+%X(bg.bmp)
+# fonts
+%Fl(2,16-Adobe-Helvetica-Bold.fnt)
+# Battery level
+%xl(H,battery.bmp,0,0,12)
+%V(10,4,15,9,0)
+%?bp<%?bc<%xd(Hl)|%xd(Hl)>|%?bl<|%xd(Ha)|%xd(Hb)|%xd(Hc)|%xd(Hd)|%xd(He)|%xd(Hf)|%xd(Hg)|%xd(Hh)|%xd(Hi)|%xd(Hj)|%xd(Hk)>>
+# Hold
+%xl(G,hold.bmp,0,0,1)
+%V(37,2,12,12,-)
+%?mh<%xd(Ga)|>
+# Volume
+%xl(F,speaker.bmp,0,0)
+%V(61,2,8,12,0)
+%xd(F)
+%xl(V,volume.bmp,0,0,4)
+%V(69,2,7,12,0)
+%?if(%pv, <, -50)<%xd(Va)|%?if(%pv, <, -25)<%xd(Vb)|%?if(%pv, <=, 0)<%xd(Vc)|%?if(%pv, >, 0)<%xd(Vd)|>>>>
+# EQ
+%xl(C,eq.bmp,0,0,2)
+%V(144,2,16,12,-)
+%?St(eq enabled)<%xd(Ca)|%xd(Cb)>
+# Shuffle mode
+%xl(D,shuffle.bmp,0,0,1)
+%V(169,2,16,11,0)
+%?ps<%xd(Da)|>
+# Repeat mode
+%xl(E,repeat.bmp,0,0,4)
+%V(194,2,16,12,-)
+%?mm<|%xd(Ea)|%xd(Eb)|%xd(Ec)|%xd(Ed)>
+# Album art
+%xl(I,shadow.bmp,0,0)
+%V(0,22,90,90,-)
+%Cl(5,5,80,80)
+%?C<%xd(I)%Cd|>
+# Title, artist, album and playlist pos
+%?C<%Vd(a)|%Vd(b)>
+# if cover art
+%Vl(a,90,35,120,48,2)%Vf(eecb56)
+%al%s%?it<%it|%fn>
+%al%s%?ia<%ia|>
+%al%s%?id<%id|>
+%Vl(a,90,90,120,7,0)%Vf(eecb56)
+%al%pp/%pe
+# if no cover art
+%Vl(b,10,35,200,48,2)%Vf(eecb56)
+%ac%s%?it<%it|%fn>
+%ac%s%?ia<%ia|>
+%ac%s%?id<%id|>
+%Vl(b,10,90,200,7,0)%Vf(eecb56)
+%ac%pp/%pe
+# Progress Bar:
+%V(0,120,220,2,-)
+%pb(0,0,220,2,progress_bar.bmp)
+# Current and remaining time:
+%V(5,139,210,7,0)%Vf(eeeeee)
+%al%pc%ar%pr
+# Playback Mode:
+%xl(B,playback_status.bmp,0,0,5)
+%V(104,135,11,11,-)
+%?mp<%xd(Be)|%xd(Ba)|%xd(Bb)|%xd(Bc)|%xd(Bd)>
+# Song Info:
+%V(5,166,210,8,0)%Vf(707070)
+%acx%Sp%%  |  %fc %?fb<%fb|%fv>kbps %fkkHz

@@ -1,0 +1,1 @@
+docs: https://www.rockbox.org/wiki/CustomWPS

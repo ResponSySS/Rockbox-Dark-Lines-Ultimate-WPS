@@ -1,0 +1,10 @@
+Grandes étapes:
+1) faire le placement de tout le texte, comme dans la version final, sans fond d'écran, avec des icones simples, etc. (une version mockup quoi)
+2) ajuster le texte jusqu'à ce que le résultat soit satisfaisant
+3) faire les icones et le fond d'écran en dernier
+
+TODO: 
+    - make battery level icon into text
+    - bigger playback icons (just like in Dark Lines)
+    - publish it to rockbox.org lol ????????
+        - give credit to the guy who made the Dark Lines theme (from which mine is heavily inspired <3)
