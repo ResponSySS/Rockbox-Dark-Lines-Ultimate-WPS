@@ -12,29 +12,29 @@
 %xl(H,battery.bmp,0,0,12)
 %V(10,4,15,9,0)
 %?bp<%?bc<%xd(Hl)|%xd(Hl)>|%?bl<|%xd(Ha)|%xd(Hb)|%xd(Hc)|%xd(Hd)|%xd(He)|%xd(Hf)|%xd(Hg)|%xd(Hh)|%xd(Hi)|%xd(Hj)|%xd(Hk)>>
-# Hold
-%xl(G,hold.bmp,0,0,1)
-%V(37,2,12,12,-)
-%?mh<%xd(Ga)|>
 # Volume
 %xl(F,speaker.bmp,0,0)
-%V(61,2,8,12,0)
+%V(37,2,8,12,0)
 %xd(F)
 %xl(V,volume.bmp,0,0,4)
-%V(69,2,7,12,0)
+%V(45,2,7,12,0)
 %?if(%pv, <, -50)<%xd(Va)|%?if(%pv, <, -25)<%xd(Vb)|%?if(%pv, <=, 0)<%xd(Vc)|%?if(%pv, >, 0)<%xd(Vd)|>>>>
-# EQ
-%xl(C,eq.bmp,0,0,2)
+# Hold
+%xl(G,hold.bmp,0,0,1)
+%V(60,2,12,12,-)
+%?mh<%xd(Ga)|>
+# Repeat mode
+%xl(E,repeat.bmp,0,0,4)
 %V(144,2,16,12,-)
-%?St(eq enabled)<%xd(Ca)|%xd(Cb)>
+%?mm<|%xd(Ea)|%xd(Eb)|%xd(Ec)|%xd(Ed)>
 # Shuffle mode
 %xl(D,shuffle.bmp,0,0,1)
 %V(169,2,16,11,0)
 %?ps<%xd(Da)|>
-# Repeat mode
-%xl(E,repeat.bmp,0,0,4)
+# EQ
+%xl(C,eq.bmp,0,0,2)
 %V(194,2,16,12,-)
-%?mm<|%xd(Ea)|%xd(Eb)|%xd(Ec)|%xd(Ed)>
+%?St(eq enabled)<%xd(Ca)|%xd(Cb)>
 # Album art
 %xl(I,shadow.bmp,0,0)
 %V(0,22,90,90,-)
